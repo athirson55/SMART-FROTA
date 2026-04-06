@@ -8,7 +8,7 @@ function DashboardPage() {
     sessionStorage.removeItem("auth_token");
     localStorage.removeItem("auth_user");
     sessionStorage.removeItem("auth_user");
-    navigate("/login", { replace: true });
+    navigate("login", { replace: true });
   }
 
   return (

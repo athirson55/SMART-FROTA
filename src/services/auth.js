@@ -6,9 +6,13 @@ function getStorage(keepConnected) {
 }
 
 export function getStoredToken() {
-  return (
-    localStorage.getItem("auth_token") || sessionStorage.getItem("auth_token")
-  );
+  try {
+    return (
+      localStorage.getItem("auth_token") || sessionStorage.getItem("auth_token")
+    );
+  } catch {
+    return null;
+  }
 }
 
 export async function loginRequest({ usuario, senha, manterConectado }) {

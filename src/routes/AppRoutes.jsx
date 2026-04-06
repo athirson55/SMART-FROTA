@@ -7,7 +7,7 @@ function ProtectedRoute({ children }) {
   const token = getStoredToken();
 
   if (!token) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="login" replace />;
   }
 
   return children;
@@ -16,7 +16,7 @@ function ProtectedRoute({ children }) {
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/login" replace />} />
+      <Route path="/" element={<Navigate to="login" replace />} />
       <Route path="/login" element={<LoginPage />} />
       <Route
         path="/dashboard"
@@ -26,7 +26,7 @@ function AppRoutes() {
           </ProtectedRoute>
         }
       />
-      <Route path="*" element={<Navigate to="/login" replace />} />
+      <Route path="*" element={<Navigate to="login" replace />} />
     </Routes>
   );
 }

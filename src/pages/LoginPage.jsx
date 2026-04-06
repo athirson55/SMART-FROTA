@@ -36,7 +36,7 @@ function LoginPage() {
       });
 
       window.setTimeout(() => {
-        navigate("/dashboard", { replace: true });
+        navigate("dashboard", { replace: true });
       }, 500);
     } catch (error) {
       setFeedback({
