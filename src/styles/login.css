@@ -476,3 +476,336 @@
   color: #606060;
   text-decoration: underline;
 }
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .dashboard-card {
+    width: min(500px, 100%);
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .tela-de-login .login {
+    width: min(392px, calc(100vw - 28px));
+  }
+
+  .tela-de-login .smart-frota-SOLU-ES {
+    left: 56px;
+    width: 266px;
+    font-size: 30px;
+  }
+
+  .tela-de-login .campos-de-login {
+    width: 296px;
+    left: 40px;
+  }
+
+  .tela-de-login .campo-usurio,
+  .tela-de-login .campo-senha,
+  .tela-de-login .boto-entrar,
+  .tela-de-login .group,
+  .tela-de-login .login-feedback {
+    width: 296px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .tela-de-login .lado-esquerdo {
+    padding: 24px 12px;
+  }
+
+  .tela-de-login .login {
+    width: min(372px, calc(100vw - 24px));
+    height: 500px;
+  }
+
+  .tela-de-login .background-login {
+    height: 500px;
+  }
+
+  .tela-de-login .acesse-o-PORTAL-DE {
+    top: 122px;
+    left: 36px;
+    font-size: 20px;
+  }
+
+  .tela-de-login .smart-frota-SOLU-ES {
+    top: 32px;
+    left: 52px;
+    width: 252px;
+    font-size: 28px;
+  }
+
+  .tela-de-login .text-wrapper-11 {
+    font-size: 18px;
+  }
+
+  .tela-de-login .campos-de-login {
+    top: 188px;
+    left: 36px;
+    width: 284px;
+    gap: 16px;
+  }
+
+  .tela-de-login .campo-usurio,
+  .tela-de-login .campo-senha {
+    width: 284px;
+    height: 56px;
+  }
+
+  .tela-de-login .text-wrapper-4,
+  .tela-de-login .text-wrapper-6 {
+    font-size: 18px;
+  }
+
+  .tela-de-login .text-wrapper-5,
+  .tela-de-login .text-wrapper-7 {
+    font-size: 16px;
+  }
+
+  .tela-de-login .manter-conectado {
+    top: 344px;
+    left: 36px;
+  }
+
+  .tela-de-login .div {
+    top: 344px;
+    right: 36px;
+    font-size: 14px;
+  }
+
+  .tela-de-login .boto-entrar,
+  .tela-de-login .group,
+  .tela-de-login .login-feedback {
+    width: 284px;
+  }
+
+  .tela-de-login .boto-entrar {
+    top: 398px;
+  }
+
+  .tela-de-login .text-wrapper-2 {
+    top: 460px;
+  }
+
+  .tela-de-login .login-feedback {
+    top: 374px;
+  }
+
+  .tela-de-login .auth-card-medium {
+    height: 540px;
+  }
+
+  .tela-de-login .auth-card-tall {
+    height: 640px;
+  }
+
+  .tela-de-login .auth-content {
+    top: 128px;
+    left: 36px;
+    right: 36px;
+  }
+
+  .tela-de-login .auth-title {
+    font-size: 26px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .tela-de-login .lado-esquerdo {
+    align-items: flex-start;
+    padding: 20px 10px;
+  }
+
+  .tela-de-login .login {
+    width: min(360px, calc(100vw - 20px));
+  }
+
+  .tela-de-login .auth-card-medium {
+    height: 520px;
+  }
+
+  .tela-de-login .auth-card-tall {
+    height: 620px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .tela-de-login .login {
+    width: min(344px, calc(100vw - 18px));
+    height: 490px;
+  }
+
+  .tela-de-login .background-login {
+    height: 490px;
+    border-radius: 22px;
+  }
+
+  .tela-de-login .smart-frota-SOLU-ES {
+    top: 26px;
+    left: 44px;
+    width: 240px;
+    font-size: 26px;
+  }
+
+  .tela-de-login .acesse-o-PORTAL-DE {
+    top: 112px;
+    left: 28px;
+    font-size: 18px;
+  }
+
+  .tela-de-login .campos-de-login {
+    top: 176px;
+    left: 28px;
+    width: 268px;
+  }
+
+  .tela-de-login .campo-usurio,
+  .tela-de-login .campo-senha,
+  .tela-de-login .boto-entrar,
+  .tela-de-login .group,
+  .tela-de-login .login-feedback {
+    width: 268px;
+  }
+
+  .tela-de-login .manter-conectado {
+    top: 334px;
+    left: 28px;
+  }
+
+  .tela-de-login .div {
+    top: 334px;
+    right: 28px;
+  }
+
+  .tela-de-login .boto-entrar {
+    top: 388px;
+  }
+
+  .tela-de-login .text-wrapper-2 {
+    top: 448px;
+  }
+
+  .tela-de-login .login-feedback {
+    top: 364px;
+  }
+
+  .tela-de-login .auth-card-medium {
+    height: 500px;
+  }
+
+  .tela-de-login .auth-card-tall {
+    height: 590px;
+  }
+
+  .tela-de-login .auth-content {
+    top: 116px;
+    left: 28px;
+    right: 28px;
+    bottom: 22px;
+  }
+
+  .tela-de-login .auth-title {
+    font-size: 24px;
+  }
+
+  .tela-de-login .auth-subtitle,
+  .tela-de-login .auth-link {
+    font-size: 14px;
+  }
+
+  .tela-de-login .auth-label {
+    font-size: 15px;
+  }
+
+  .tela-de-login .auth-input {
+    font-size: 16px;
+  }
+
+  .tela-de-login .auth-submit {
+    height: 46px;
+    font-size: 18px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .tela-de-login .lado-esquerdo {
+    padding: 14px 8px;
+  }
+
+  .tela-de-login .login {
+    width: min(324px, calc(100vw - 16px));
+    height: 478px;
+  }
+
+  .tela-de-login .background-login {
+    height: 478px;
+    border-radius: 18px;
+  }
+
+  .tela-de-login .smart-frota-SOLU-ES {
+    left: 40px;
+    width: 224px;
+    font-size: 24px;
+  }
+
+  .tela-de-login .text-wrapper-11 {
+    font-size: 16px;
+  }
+
+  .tela-de-login .acesse-o-PORTAL-DE {
+    left: 24px;
+    font-size: 17px;
+  }
+
+  .tela-de-login .campos-de-login {
+    left: 24px;
+    width: 252px;
+  }
+
+  .tela-de-login .campo-usurio,
+  .tela-de-login .campo-senha,
+  .tela-de-login .boto-entrar,
+  .tela-de-login .group,
+  .tela-de-login .login-feedback {
+    width: 252px;
+  }
+
+  .tela-de-login .text-wrapper-4,
+  .tela-de-login .text-wrapper-6 {
+    font-size: 16px;
+  }
+
+  .tela-de-login .text-wrapper-5,
+  .tela-de-login .text-wrapper-7,
+  .tela-de-login .text-wrapper,
+  .tela-de-login .text-wrapper-2,
+  .tela-de-login .div,
+  .tela-de-login .text-wrapper-3 {
+    font-size: 14px;
+  }
+
+  .tela-de-login .auth-card-medium {
+    height: 490px;
+  }
+
+  .tela-de-login .auth-card-tall {
+    height: 572px;
+  }
+
+  .tela-de-login .auth-content {
+    top: 108px;
+    left: 22px;
+    right: 22px;
+    bottom: 18px;
+  }
+
+  .tela-de-login .auth-title {
+    font-size: 22px;
+  }
+}
