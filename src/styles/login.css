@@ -640,12 +640,15 @@
 /* md */
 @media (max-width: 768px) {
   .tela-de-login .lado-esquerdo {
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     padding: 20px 10px;
   }
 
   .tela-de-login .login {
     width: min(360px, calc(100vw - 20px));
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .tela-de-login .auth-card-medium {
@@ -659,9 +662,16 @@
 
 /* sm */
 @media (max-width: 640px) {
+  .tela-de-login .lado-esquerdo {
+    align-items: center;
+    justify-content: center;
+  }
+
   .tela-de-login .login {
     width: min(344px, calc(100vw - 18px));
     height: 490px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .tela-de-login .background-login {
@@ -751,7 +761,8 @@
   }
 
   .tela-de-login .auth-submit {
-    height: 46px;
+    height: 48px;
+    min-height: 48px;
     font-size: 18px;
   }
 }
@@ -759,12 +770,16 @@
 /* xs */
 @media (max-width: 475px) {
   .tela-de-login .lado-esquerdo {
+    align-items: center;
+    justify-content: center;
     padding: 14px 8px;
   }
 
   .tela-de-login .login {
     width: min(324px, calc(100vw - 16px));
     height: 478px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .tela-de-login .background-login {
@@ -836,8 +851,16 @@
 
 /* xxs - Extra small devices (< 375px) */
 @media (max-width: 374px) {
+  .tela-de-login .lado-esquerdo {
+    align-items: center;
+    justify-content: center;
+    padding: 12px 6px;
+  }
+
   .tela-de-login .login {
     width: min(304px, calc(100vw - 12px));
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .tela-de-login .smart-frota-SOLU-ES {
