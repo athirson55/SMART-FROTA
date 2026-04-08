@@ -15,7 +15,7 @@ export function getStoredToken() {
   }
 }
 
-export async function loginRequest({ usuario, senha, manterConectado }) {
+export async function loginRequest({ email, senha, manterConectado }) {
   const response = await fetch(LOGIN_API_URL, {
     method: "POST",
     headers: {
@@ -23,7 +23,7 @@ export async function loginRequest({ usuario, senha, manterConectado }) {
     },
     credentials: "include",
     body: JSON.stringify({
-      usuario,
+      email,
       senha,
       manterConectado,
     }),
@@ -43,14 +43,14 @@ export async function loginRequest({ usuario, senha, manterConectado }) {
       payload?.error ||
       payload?.erro ||
       (response.status === 401
-        ? "Usuário ou senha inválidos."
+        ? "Email ou senha inválidos."
         : "Não foi possível autenticar. Verifique seus dados.");
 
     throw new Error(message);
   }
 
   const token = payload?.token || payload?.accessToken || null;
-  const user = payload?.usuario || payload?.user || null;
+  const user = payload?.email || payload?.usuario || payload?.user || null;
 
   if (token) {
     const currentStorage = getStorage(manterConectado);

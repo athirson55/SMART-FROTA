@@ -4,7 +4,7 @@ import { loginRequest } from "../services/auth";
 
 function LoginPage() {
   const navigate = useNavigate();
-  const [usuario, setUsuario] = useState("");
+  const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [manterConectado, setManterConectado] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -14,10 +14,10 @@ function LoginPage() {
     event.preventDefault();
     setFeedback({ type: "", message: "" });
 
-    if (!usuario.trim() || !senha.trim()) {
+    if (!email.trim() || !senha.trim()) {
       setFeedback({
         type: "erro",
-        message: "Preencha usuário e senha para continuar.",
+        message: "Preencha email e senha para continuar.",
       });
       return;
     }
@@ -25,7 +25,7 @@ function LoginPage() {
     try {
       setLoading(true);
       await loginRequest({
-        usuario: usuario.trim(),
+        email: email.trim(),
         senha: senha.trim(),
         manterConectado,
       });
@@ -69,17 +69,17 @@ function LoginPage() {
           </p>
           <form className="login-form" onSubmit={handleSubmit} noValidate>
             <div className="campos-de-login">
-              <label className="campo-usurio" htmlFor="usuario">
-                <span className="text-wrapper-4">USUÁRIO</span>
+              <label className="campo-usurio" htmlFor="email">
+                <span className="text-wrapper-4">EMAIL</span>
                 <input
                   className="campo-input text-wrapper-5"
-                  id="usuario"
-                  name="usuario"
-                  type="text"
-                  placeholder="Digite o seu usuário"
-                  autoComplete="username"
-                  value={usuario}
-                  onChange={(event) => setUsuario(event.target.value)}
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Digite o seu email"
+                  autoComplete="email"
+                  value={email}
+                  onChange={(event) => setEmail(event.target.value)}
                   required
                 />
               </label>
