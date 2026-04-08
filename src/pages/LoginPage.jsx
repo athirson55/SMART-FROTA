@@ -79,6 +79,10 @@ function LoginPage() {
                   type="email"
                   placeholder="Digite o seu email"
                   autoComplete="email"
+                  inputMode="email"
+                  maxLength="254"
+                  spellCheck="false"
+                  autoCapitalize="off"
                   value={email}
                   onChange={(event) => setEmail(event.target.value)}
                   required
@@ -93,6 +97,9 @@ function LoginPage() {
                   type="password"
                   placeholder="Digite sua senha"
                   autoComplete="current-password"
+                  maxLength="128"
+                  spellCheck="false"
+                  autoCapitalize="off"
                   value={senha}
                   onChange={(event) => setSenha(event.target.value)}
                   required

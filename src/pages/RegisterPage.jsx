@@ -86,6 +86,10 @@ function RegisterPage() {
                   type="text"
                   placeholder="Digite o seu nome"
                   autoComplete="name"
+                  inputMode="text"
+                  maxLength="100"
+                  spellCheck="false"
+                  autoCapitalize="words"
                   value={formData.nome}
                   onChange={handleChange}
                   required
@@ -101,6 +105,10 @@ function RegisterPage() {
                   type="email"
                   placeholder="Digite o seu email"
                   autoComplete="email"
+                  inputMode="email"
+                  maxLength="254"
+                  spellCheck="false"
+                  autoCapitalize="off"
                   value={formData.email}
                   onChange={handleChange}
                   required
@@ -116,6 +124,9 @@ function RegisterPage() {
                   type="password"
                   placeholder="Crie uma senha"
                   autoComplete="new-password"
+                  maxLength="128"
+                  spellCheck="false"
+                  autoCapitalize="off"
                   value={formData.senha}
                   onChange={handleChange}
                   required
@@ -131,6 +142,9 @@ function RegisterPage() {
                   type="password"
                   placeholder="Confirme sua senha"
                   autoComplete="new-password"
+                  maxLength="128"
+                  spellCheck="false"
+                  autoCapitalize="off"
                   value={formData.confirmarSenha}
                   onChange={handleChange}
                   required

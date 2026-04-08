@@ -58,6 +58,10 @@ function RecoverPasswordPage() {
                   type="email"
                   placeholder="Digite o seu email"
                   autoComplete="email"
+                  inputMode="email"
+                  maxLength="254"
+                  spellCheck="false"
+                  autoCapitalize="off"
                   value={email}
                   onChange={(event) => setEmail(event.target.value)}
                   required

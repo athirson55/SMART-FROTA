@@ -430,10 +430,19 @@
   font-size: 17px;
   font-weight: 300;
   color: #3e3e3e;
+  min-height: 44px;
+  padding: 8px 0;
+  -webkit-appearance: none;
+  -webkit-font-size-adjust: 100%;
 }
 
 .tela-de-login .auth-input::placeholder {
   color: #8b8b8b;
+}
+
+.tela-de-login .auth-input:focus {
+  outline: none;
+  caret-color: #03d303;
 }
 
 .tela-de-login .auth-submit {
@@ -448,6 +457,21 @@
   font-weight: 700;
   cursor: pointer;
   box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.14);
+  min-height: 50px;
+  -webkit-appearance: none;
+  -webkit-font-size-adjust: 100%;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.tela-de-login .auth-submit:active {
+  transform: scale(0.98);
+}
+
+.tela-de-login .auth-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .tela-de-login .auth-feedback {
@@ -807,5 +831,56 @@
 
   .tela-de-login .auth-title {
     font-size: 22px;
+  }
+}
+
+/* xxs - Extra small devices (< 375px) */
+@media (max-width: 374px) {
+  .tela-de-login .login {
+    width: min(304px, calc(100vw - 12px));
+  }
+
+  .tela-de-login .smart-frota-SOLU-ES {
+    left: 36px;
+    width: 208px;
+    font-size: 22px;
+  }
+
+  .tela-de-login .acesse-o-PORTAL-DE {
+    left: 20px;
+    font-size: 16px;
+  }
+
+  .tela-de-login .campos-de-login {
+    left: 20px;
+    width: 232px;
+  }
+
+  .tela-de-login .campo-usurio,
+  .tela-de-login .campo-senha {
+    width: 232px;
+  }
+
+  .tela-de-login .auth-content {
+    left: 18px;
+    right: 18px;
+    top: 96px;
+  }
+
+  .tela-de-login .auth-title {
+    font-size: 20px;
+  }
+
+  .tela-de-login .auth-submit {
+    height: 48px;
+    min-height: 48px;
+  }
+
+  .tela-de-login .auth-card-tall {
+    height: 560px;
+  }
+
+  .tela-de-login .auth-card-medium {
+    height: 480px;
   }
 }
