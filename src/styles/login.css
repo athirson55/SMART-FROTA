@@ -35,6 +35,7 @@
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 0px 4px 4px #00000040;
+  overflow: hidden;
 }
 
 .tela-de-login .boto-entrar {
@@ -97,7 +98,7 @@
 
 .tela-de-login .div {
   position: absolute;
-  top: 366px;
+  top: 385px;
   right: 41px;
   font-family: "Poppins", Helvetica;
   font-weight: 600;
@@ -124,7 +125,7 @@
 
 .tela-de-login .manter-conectado {
   position: absolute;
-  top: 366px;
+  top: 345px;
   left: 43px;
   width: 168px;
   height: 23px;
@@ -514,6 +515,10 @@
     width: min(392px, calc(100vw - 28px));
   }
 
+  .tela-de-login .background-login {
+    overflow: hidden;
+  }
+
   .tela-de-login .smart-frota-SOLU-ES {
     left: 56px;
     width: 266px;
@@ -547,6 +552,7 @@
 
   .tela-de-login .background-login {
     height: 500px;
+    overflow: hidden;
   }
 
   .tela-de-login .acesse-o-PORTAL-DE {
@@ -590,12 +596,12 @@
   }
 
   .tela-de-login .manter-conectado {
-    top: 344px;
+    top: 323px;
     left: 36px;
   }
 
   .tela-de-login .div {
-    top: 344px;
+    top: 363px;
     right: 36px;
     font-size: 14px;
   }
@@ -615,7 +621,12 @@
   }
 
   .tela-de-login .login-feedback {
-    top: 374px;
+    top: 364px;
+  }
+
+  .tela-de-login .background-login {
+    height: 500px;
+    overflow: hidden;
   }
 
   .tela-de-login .auth-card-medium {
@@ -651,6 +662,10 @@
     margin-right: auto;
   }
 
+  .tela-de-login .background-login {
+    overflow: hidden;
+  }
+
   .tela-de-login .auth-card-medium {
     height: 520px;
   }
@@ -677,6 +692,7 @@
   .tela-de-login .background-login {
     height: 490px;
     border-radius: 22px;
+    overflow: hidden;
   }
 
   .tela-de-login .smart-frota-SOLU-ES {
@@ -707,12 +723,12 @@
   }
 
   .tela-de-login .manter-conectado {
-    top: 334px;
+    top: 313px;
     left: 28px;
   }
 
   .tela-de-login .div {
-    top: 334px;
+    top: 353px;
     right: 28px;
   }
 
@@ -785,6 +801,7 @@
   .tela-de-login .background-login {
     height: 478px;
     border-radius: 18px;
+    overflow: hidden;
   }
 
   .tela-de-login .smart-frota-SOLU-ES {
@@ -829,6 +846,16 @@
     font-size: 14px;
   }
 
+  .tela-de-login .manter-conectado {
+    top: 303px;
+    left: 22px;
+  }
+
+  .tela-de-login .div {
+    top: 343px;
+    right: 22px;
+  }
+
   .tela-de-login .auth-card-medium {
     height: 490px;
   }
@@ -863,6 +890,10 @@
     margin-right: auto;
   }
 
+  .tela-de-login .background-login {
+    overflow: hidden;
+  }
+
   .tela-de-login .smart-frota-SOLU-ES {
     left: 36px;
     width: 208px;
@@ -882,6 +913,16 @@
   .tela-de-login .campo-usurio,
   .tela-de-login .campo-senha {
     width: 232px;
+  }
+
+  .tela-de-login .manter-conectado {
+    top: 293px;
+    left: 18px;
+  }
+
+  .tela-de-login .div {
+    top: 333px;
+    right: 18px;
   }
 
   .tela-de-login .auth-content {
