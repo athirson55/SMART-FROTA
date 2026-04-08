@@ -54,8 +54,8 @@
   cursor: pointer;
 }
 
-.tela-de-login .boto-entrar:disabled {
-  cursor: not-allowed;
+.tela-de-login .boto-entrar:hover:not(:disabled) {
+  background-color: rgba(3, 211, 3, 0.9);
 }
 
 .tela-de-login .group {
@@ -110,7 +110,7 @@
   font-family: "Poppins", Helvetica;
   font-weight: 500;
   color: #03d303;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0;
   line-height: normal;
   text-decoration: underline;
@@ -118,6 +118,13 @@
   z-index: 3;
   margin-top: 4px;
   margin-bottom: 12px;
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
+}
+
+.tela-de-login .div:hover {
+  color: #00a000;
 }
 
 .tela-de-login .text-wrapper-2 {
