@@ -97,23 +97,27 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 140px 43px 40px 43px;
+  padding: 0;
   margin: 0;
+  margin-top: 24px;
 }
 
 .tela-de-login .div {
-  position: absolute;
-  top: 345px;
-  right: 43px;
+  position: relative;
+  align-self: flex-end;
+  top: 0;
+  right: 0;
   font-family: "Poppins", Helvetica;
-  font-weight: 600;
-  color: #606060;
-  font-size: 15px;
+  font-weight: 500;
+  color: #03d303;
+  font-size: 14px;
   letter-spacing: 0;
   line-height: normal;
   text-decoration: underline;
   cursor: pointer;
   z-index: 3;
+  margin-top: 4px;
+  margin-bottom: 12px;
 }
 
 .tela-de-login .text-wrapper-2 {
@@ -156,14 +160,11 @@
   border-color: #03d303;
 }
 
-.tela-de-login .text-wrapper-3 {
-  width: 141px;
-  height: 23px;
+.tela-de-login .texto-wrapper-3 {
   font-family: "Poppins", Helvetica;
-  font-weight: 200;
-  color: #606060;
+  font-weight: 500;
+  color: #3e3e3e;
   font-size: 15px;
-  letter-spacing: 0;
   line-height: normal;
 }
 
@@ -172,15 +173,21 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .tela-de-login .campo-usurio {
-  width: 313px;
-  height: 60.5px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e0e0e0;
+  transition: border-bottom-color 0.2s ease;
+}
+
+.tela-de-login .campo-usurio:focus-within {
+  border-bottom-color: #03d303;
 }
 
 .tela-de-login .text-wrapper-4 {
@@ -188,9 +195,9 @@
   width: 81px;
   height: 30px;
   font-family: "Poppins", Helvetica;
-  font-weight: 200;
-  color: #000000;
-  font-size: 20px;
+  font-weight: 600;
+  color: #1f1f1f;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -200,21 +207,25 @@
   width: 100%;
   height: 27px;
   font-family: "Poppins", Helvetica;
-  font-weight: 200;
-  color: #606060;
-  font-size: 18px;
+  font-weight: 300;
+  color: #3e3e3e;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: normal;
 }
 
 .tela-de-login .campo-senha {
   margin-left: 0;
-  width: 313px;
-  height: 60.5px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e0e0e0;
+  transition: border-bottom-color 0.2s ease;
+}
+
+.tela-de-login .campo-senha:focus-within {
+  border-bottom-color: #03d303;
 }
 
 .tela-de-login .text-wrapper-6 {
@@ -222,9 +233,9 @@
   width: 61px;
   height: 30px;
   font-family: "Poppins", Helvetica;
-  font-weight: 200;
-  color: #000000;
-  font-size: 20px;
+  font-weight: 600;
+  color: #1f1f1f;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -234,9 +245,9 @@
   width: 100%;
   height: 27px;
   font-family: "Poppins", Helvetica;
-  font-weight: 200;
-  color: #606060;
-  font-size: 18px;
+  font-weight: 300;
+  color: #3e3e3e;
+  font-size: 16px;
   letter-spacing: 0;
   line-height: normal;
 }
@@ -272,15 +283,16 @@
 }
 
 .tela-de-login .acesse-o-PORTAL-DE {
-  position: absolute;
-  top: 132px;
-  left: 44px;
+  position: relative;
+  margin: 0;
+  padding: 0;
   font-family: "Poppins", Helvetica;
   font-weight: 400;
   color: #000000;
-  font-size: 22px;
+  font-size: 18px;
   letter-spacing: 0;
-  line-height: normal;
+  line-height: 1.3;
+  margin-bottom: 20px;
 }
 
 .tela-de-login .span {
@@ -298,17 +310,21 @@
 }
 
 .tela-de-login .smart-frota-SOLU-ES {
-  position: absolute;
-  top: 38px;
-  left: 61px;
-  width: 274px;
+  position: relative;
+  width: 100%;
   font-family: "Montserrat", Helvetica;
   font-weight: 700;
   color: transparent;
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
   letter-spacing: 0;
-  line-height: normal;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  top: 0;
+  left: 0;
 }
 
 .tela-de-login .text-wrapper-10 {
@@ -368,22 +384,23 @@
 }
 
 .tela-de-login .auth-card-medium {
-  height: 560px;
+  /* height: auto - remover fixo */
 }
 
 .tela-de-login .auth-card-tall {
-  height: 660px;
+  /* height: auto - remover fixo */
 }
 
 .tela-de-login .auth-content {
-  position: absolute;
-  top: 140px;
-  left: 44px;
-  right: 44px;
-  bottom: 30px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 2;
   display: flex;
   flex-direction: column;
+  padding: 40px 40px;
 }
 
 .tela-de-login .auth-title {
@@ -395,34 +412,37 @@
 }
 
 .tela-de-login .auth-subtitle {
-  margin-top: 10px;
+  margin-top: 12px;
+  margin-bottom: 20px;
   font-family: "Poppins", Helvetica;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 400;
   color: #5f5f5f;
-  line-height: 1.35;
+  line-height: 1.5;
 }
 
 .tela-de-login .auth-form {
   margin-top: 24px;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 18px;
 }
 
 .tela-de-login .auth-field {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #d9d9d9;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
 }
 
 .tela-de-login .auth-label {
   font-family: "Poppins", Helvetica;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
   color: #1f1f1f;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .tela-de-login .auth-input {
@@ -437,6 +457,7 @@
   padding: 8px 0;
   -webkit-appearance: none;
   -webkit-font-size-adjust: 100%;
+  transition: border-bottom-color 0.2s ease;
 }
 
 .tela-de-login .auth-input::placeholder {
@@ -448,15 +469,27 @@
   caret-color: #03d303;
 }
 
+.tela-de-login .auth-input.input-error {
+  border-bottom-color: #c53030;
+}
+
+.tela-de-login .auth-hint {
+  font-family: "Poppins", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 4px;
+  line-height: 1.2;
+}
+
 .tela-de-login .auth-submit {
-  margin-top: 6px;
+  margin-top: 20px;
   height: 50px;
   border: 0;
   border-radius: 10px;
   background-color: #03d303;
   color: #ffffff;
   font-family: "Poppins", Helvetica;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   cursor: pointer;
   box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.14);
@@ -478,12 +511,13 @@
 }
 
 .tela-de-login .auth-feedback {
-  min-height: 18px;
-  margin-top: 2px;
+  min-height: 20px;
+  margin-top: 6px;
   font-family: "Poppins", Helvetica;
   font-size: 13px;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
+  line-height: 1.4;
 }
 
 .tela-de-login .auth-feedback.erro {
@@ -495,13 +529,19 @@
 }
 
 .tela-de-login .auth-link {
-  margin-top: auto;
+  margin-top: 16px;
   align-self: center;
   font-family: "Poppins", Helvetica;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
-  color: #606060;
+  color: #03d303;
   text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.tela-de-login .auth-link:hover {
+  color: #00a000;
 }
 
 /* 2xl */
