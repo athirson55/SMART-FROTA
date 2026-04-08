@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { loginRequest } from "../services/auth";
 
@@ -111,9 +112,9 @@ function LoginPage() {
               <span className="text-wrapper-3">Manter Conectado</span>
             </label>
 
-            <a className="div" href="#">
+            <Link className="div" to="/recuperar-senha">
               Recuperar Senha
-            </a>
+            </Link>
 
             <button className="boto-entrar" type="submit" disabled={loading}>
               <span className="group">
@@ -130,9 +131,9 @@ function LoginPage() {
             </p>
           </form>
 
-          <a className="text-wrapper-2" href="#">
+          <Link className="text-wrapper-2" to="/cadastro">
             Cadastre-se
-          </a>
+          </Link>
         </div>
       </div>
     </div>
