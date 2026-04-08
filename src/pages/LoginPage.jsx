@@ -136,11 +136,11 @@ function LoginPage() {
             <p className={`login-feedback ${feedback.type}`} aria-live="polite">
               {feedback.message}
             </p>
-          </form>
 
-          <Link className="text-wrapper-2" to="/cadastro">
-            Cadastre-se
-          </Link>
+            <Link className="text-wrapper-2" to="/cadastro">
+              Cadastre-se
+            </Link>
+          </form>
         </div>
       </div>
     </div>

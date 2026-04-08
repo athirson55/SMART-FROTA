@@ -1,5 +1,9 @@
+const API_BASE_URL = (
+  import.meta.env.VITE_API_BASE_URL || "http://localhost:3000"
+).replace(/\/+$/, "");
+
 const LOGIN_API_URL =
-  import.meta.env.VITE_LOGIN_API_URL || "http://localhost:3000/auth/login";
+  import.meta.env.VITE_LOGIN_API_URL || `${API_BASE_URL}/auth/login`;
 
 function getStorage(keepConnected) {
   return keepConnected ? localStorage : sessionStorage;
@@ -49,7 +53,8 @@ export async function loginRequest({ email, senha, manterConectado }) {
     throw new Error(message);
   }
 
-  const token = payload?.token || payload?.accessToken || null;
+  const token =
+    payload?.token || payload?.accessToken || payload?.access_token || null;
   const user = payload?.email || payload?.usuario || payload?.user || null;
 
   if (token) {
